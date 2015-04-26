@@ -1,6 +1,6 @@
-angular.module('starter.controllers', [])
+angular.module('calorific.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('CalCtrl', function($scope, $ionicModal, $timeout) {
   // Form data for the login modal
   $scope.loginData = {};
 
