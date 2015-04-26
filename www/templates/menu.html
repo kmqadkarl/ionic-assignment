@@ -13,20 +13,38 @@
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
+    <ion-header-bar class="bar-balanced">
       <h1 class="title">Meals</h1>
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item nav-clear menu-close href="#/app/breakfast">
-          Breakfast
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/lunch">
-          Lunch
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/dinner">
-          Dinner
-        </ion-item>
+        <div class="list">
+
+  <ion-item class="nav-clear menu-close item item-icon-left "
+    href="#/app/home">
+    <i class="icon ion-home"></i>
+    Home
+    </ion-item>
+
+    <ion-item class="nav-clear menu-close item item-icon-left "
+    href="#/app/breakfast">
+    <i class="icon ion-battery-full"></i>
+    Breakfast
+    </ion-item>
+
+    <ion-item class="nav-clear menu-close item item-icon-left "
+    href="#/app/lunch">
+    <i class="icon ion-battery-low"></i>
+    Lunch
+    </ion-item>
+
+    <ion-item class="nav-clear menu-close item item-icon-left "
+    href="#/app/dinner">
+    <i class="icon ion-battery-empty"></i>
+    Dinner
+    </ion-item>
+
+</div>
       </ion-list>
     </ion-content>
   </ion-side-menu>
