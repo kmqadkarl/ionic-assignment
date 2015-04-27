@@ -1,4 +1,7 @@
-/* Empty. Add your own CSS if you like */
+/* All my lovely Css. Ended up altering
+the original CSS through the DOM in
+Chrome so my Css is altered in the ionic CSS file
+This is just an example of external child css. */
 .textheader
 {
   padding:5px;
