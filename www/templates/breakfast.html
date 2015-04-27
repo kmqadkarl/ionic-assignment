@@ -1,16 +1,17 @@
-
+<!--Breakfast menu Title at top of the page -->
 <ion-view view-title="'Breakfast Menu'">
-
+  <!-- Link to the calorific app.js function -->
   <ion-content ng-app="calorific">
-
+    <!-- Card class -->
     <div class="list card">
 
-  <div >
+  <div ><!-- inline stying -->
     <h1 style="color:white; text-align:center; background-color:green;">Breakfast</h1>
 
   </div>
 
   <div class="item item-body">
+    <!-- main image -->
     <img class="full-image" src="img/breakfast.jpg">
 
   </div>
@@ -19,25 +20,28 @@
   <div class=“card”>
 
 
-    <center><h3>Total Calories (max 2000 kcal)
+    <center><h3>Total Calories (max 2000 kcal)<!-- Max calories allowed. Try to max it out.  -->
+
+      <!-- link to function in my controllers which totals the Calories. starts at 0 -->
          <div id="totCal">
            0
          </div>
        </h3></center>
 
-         <center><a class="button button-small button-balanced" style="margin-bottom:10px;" onclick="reset()">Clear Calories</a></center>
+         <center><a class="button button-small button-balanced" style="margin-bottom:10px;" onclick="reset()">Clear Calories</a></center><!-- Resets the count to 0 -->
 
+         <!-- List of foods for breakfast -->
          <div class="item item-divider item-balanced">
         Cereal (per 40g)
       </div>
 
-                <a class="item item item-avatar-right"  onclick="addCal('+124')" >
+                <a class="item item item-avatar-right"  onclick="addCal('+124')" ><!-- adds 124 cals from function in controllers-->
                   <img src="img/cornflake.jpg">
                <p>Cornflakes - 124kcal per 40g</p>
                <p>Info - Fat 3g | Carbs 3.4g | Sugar 10g</p>
              </a>
 
-               <a class="item item item-avatar-right"  onclick="addCal('+110')" >
+               <a class="item item item-avatar-right"  onclick="addCal('+110')" ><!-- adds 110 cals from function in controllers-->
                  <img src="img/muesli.jpg">
                <p>Muesli - 110kcal per 40g</p>
                <p>Info - Fat 1g | Carbs 2.4g | Sugar 5g</p>
@@ -49,13 +53,13 @@
          Drinks (per 250ml)
        </div>
 
-                 <a class="item item item-avatar-right"  onclick="addCal('+60')" >
+                 <a class="item item item-avatar-right"  onclick="addCal('+60')" ><!-- adds cals from function in controllers-->
                    <img src="img/coffee.jpg">
                 <p>Coffee - 60kcal per 250ml</p>
                 <p>Info - Fat 4g | Carbs 1.4g | Sugar 8g</p>
               </a>
 
-                <a class="item item item-avatar-right"  onclick="addCal('+80')" >
+                <a class="item item item-avatar-right"  onclick="addCal('+80')" ><!-- adds cals from function in controllers-->
                   <img src="img/milk.jpg">
                 <p>Glass Milk - 80kcal per 250ml</p>
                 <p>Info - Fat 3g | Carbs 1.4g | Sugar 0g</p>
@@ -65,19 +69,19 @@
                 Other
                 </div>
 
-                <a class="item item item-avatar-right"  onclick="addCal('+120')" >
+                <a class="item item item-avatar-right"  onclick="addCal('+120')" ><!-- adds cals from function in controllers-->
                   <img src="img/croissant.jpg">
                   <p>Croissant - 120kcal g</p>
                   <p>Info - Fat 3g | Carbs 2.4g | Sugar 4g</p>
                   </a>
-                <a class="item item item-avatar-right"  onclick="addCal('+560')" >
+                <a class="item item item-avatar-right"  onclick="addCal('+560')" ><!-- adds cals from function in controllers-->
                   <img src="img/fry.jpg">
                   <p>Irish Breakfast - 560kcal</p>
                   <p>Info - Fat 40g | Carbs 15.4g | Sugar 10g</p>
                   </a>
 
 
-
+                  <!-- padding bottom-->
          <div style="padding-bottom:20px;">
          </div>
 

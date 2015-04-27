@@ -1,15 +1,15 @@
-
+<!--Dinner menu Title at top of the page -->
 <ion-view view-title="'Dinner Menu'">
-
+  <!-- Link to the calorific app.js function -->
   <ion-content ng-app="calorific">
-
+    <!-- Card class -->
     <div class="list card">
 
-      <div >
+      <div ><!-- inline stying -->
         <h1 style="color:white; text-align:center; background-color:green;">Dinner</h1>
 
       </div>
-
+      <!-- main image -->
       <div class="item item-body">
         <img class="full-image" src="img/dinner.jpg">
 
@@ -18,32 +18,34 @@
 
     <div class=“card”>
 
-
+      <!-- Max calories allowed. Try to max it out.  -->
     <center><h3>Total Calories (max 2000 kcal)
+      <!-- link to function in my controllers which totals the Calories. -->
          <div id="totCal">
            0
          </div>
        </h3></center>
 
-         <center><a class="button button-small button-balanced" style="margin-bottom:10px;" onclick="reset()">Clear Calories</a></center>
+         <center><a class="button button-small button-balanced" style="margin-bottom:10px;" onclick="reset()">Clear Calories</a></center><!-- Resets the count to 0 -->
 
+         <!-- List of foods for breakfast -->
          <div class="item item-divider item-balanced">
         Meats (per 10oz)
       </div>
 
-              <a class="item item item-avatar-right"  onclick="addCal('+400')" >
+              <a class="item item item-avatar-right"  onclick="addCal('+400')" ><!-- adds cals from function in controllers-->
                 <img src="img/sirloin.jpg">
                 <p>Sirloin - 400kcal per 10oz</p>
                 <p>Info - Fat 30g | Carbs 3.4g | Sugar 0g</p>
               </a>
 
-              <a class="item item item-avatar-right"  onclick="addCal('+350')" >
+              <a class="item item item-avatar-right"  onclick="addCal('+350')" ><!-- adds cals from function in controllers-->
                 <img src="img/rump.jpg">
                 <p>Rump - 350kcal per 10oz</p>
                 <p>Info - Fat 35g | Carbs 5.4g | Sugar 0g</p>
               </a>
 
-              <a class="item item item-avatar-right"  onclick="addCal('+300')" >
+              <a class="item item item-avatar-right"  onclick="addCal('+300')" ><!-- adds cals from function in controllers-->
                 <img src="img/chicken.jpg">
                 <p>Chicken - 300kcal per 10oz</p>
                 <p>Info - Fat 10g | Carbs 4.4g | Sugar 0g</p>
@@ -55,13 +57,13 @@
          Salads (per 261g)
        </div>
 
-               <a class="item item item-avatar-right"  onclick="addCal('+98')" >
+               <a class="item item item-avatar-right"  onclick="addCal('+98')" ><!-- adds cals from function in controllers-->
                  <img src="img/caesar.jpg">
                  <p>Caesar - 98kcal per 261g</p>
                  <p>Fat 9g | Carbs 1.4g | Sugar 3g</p>
                </a>
 
-               <a class="item item item-avatar-right"  onclick="addCal('+178')" >
+               <a class="item item item-avatar-right"  onclick="addCal('+178')" ><!-- adds cals from function in controllers-->
                  <img src="img/tuna.jpg">
                  <p>Tuna Salad - 178kcal per 261g</p>
                  <p>Fat 6.8g | Carbs 1.4g | Sugar 3.4g</p>
@@ -71,12 +73,12 @@
           Fish (per 227g)
           </div>
 
-                <a class="item item item-avatar-right"  onclick="addCal('+611')" >
+                <a class="item item item-avatar-right"  onclick="addCal('+611')" ><!-- adds cals from function in controllers-->
                   <img src="img/fishchips.jpg">
                   <p>Fish & Chips - 611kcal per 227g</p>
                   <p>Fat 31g | Carbs 32g | Sugar 0g</p>
                 </a>
-                <a class="item item item-avatar-right"  onclick="addCal('+611')" >
+                <a class="item item item-avatar-right"  onclick="addCal('+611')" ><!-- adds cals from function in controllers-->
                   <img src="img/whitefish.jpg">
                   <p>White fish - 100kcal per 125g</p>
                   <p>Fat 0.9g | Carbs 10g | Sugar 0g</p>
@@ -86,17 +88,17 @@
           Sides
           </div>
 
-                <a class="item item item-avatar-right"  onclick="addCal('+114')" >
+                <a class="item item item-avatar-right"  onclick="addCal('+114')" ><!-- adds cals from function in controllers-->
                   <img src="img/mash.jpg">
                   <p>Mash Potatoes - 114kcal per 110g</p>
                   <p>Fat 4.7g | Carbs 5g | Sugar 1.1g</p>
                 </a>
-                <a class="item item item-avatar-right"  onclick="addCal('+312')" >
+                <a class="item item item-avatar-right"  onclick="addCal('+312')" ><!-- adds cals from function in controllers-->
                   <img src="img/chips.jpg">
                   <p>Homemad chips - 312kcal per 165g</p>
                   <p>Fat 11.1g | Carbs 23g | Sugar 1g</p>
                 </a>
-
+                <!-- padding bottom-->
         <div style="padding-bottom:20px;">
         </div>
 

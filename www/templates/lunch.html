@@ -1,16 +1,17 @@
-
+<!--Lunch menu Title at top of the page -->
 <ion-view view-title="'Lunch Menu'">
-
+  <!-- Link to the calorific app.js function -->
   <ion-content ng-app="calorific" >
-
+    <!-- Card class -->
     <div class="list card">
 
-      <div >
+      <div ><!-- inline stying -->
         <h1 style="color:white; text-align:center; background-color:green;">Lunch</h1>
 
       </div>
 
       <div class="item item-body">
+        <!-- main image -->
         <img class="full-image" src="img/lunch.jpg">
 
       </div>
@@ -19,31 +20,34 @@
     <div class=“card”>
 
 
-    <center><h3>Total Calories (max 2000 kcal)
+    <center><h3>Total Calories (max 2000 kcal)<!-- Max calories allowed. Try to max it out.  -->
+
+      <!-- link to function in my controllers which totals the Calories. starts at 0 -->
          <div id="totCal">
            0
          </div>
        </h3></center>
 
-         <center><a class="button button-small button-balanced" style="margin-bottom:10px;" onclick="reset()">Clear Calories</a></center>
+         <center><a class="button button-small button-balanced" style="margin-bottom:10px;" onclick="reset()">Clear Calories</a></center><!-- Resets the count to 0 -->
 
+         <!-- List of foods for Lunch -->
          <div class="item item-divider item-balanced">
         Sandwiches
       </div>
 
-              <a class="item item item-avatar-right"  onclick="addCal('+589')" >
+              <a class="item item item-avatar-right"  onclick="addCal('+589')" ><!-- adds cals from function in controllers-->
                 <img src="img/blt.jpg">
                 <p>BLT - 589kcal per sandwich</p>
                 <p>Info - Fat 22g | Carbs 21g | Sugar 46.9g</p>
               </a>
 
-              <a class="item item item-avatar-right"  onclick="addCal('+200')" >
+              <a class="item item item-avatar-right"  onclick="addCal('+200')" ><!-- adds cals from function in controllers-->
                 <img src="img/ham.jpg">
                 <p>Ham & Tomato - 200kcal per sandwich</p>
                 <p>Info - Fat 2.9g | Carbs 5.4g | Sugar .6g</p>
               </a>
 
-              <a class="item item item-avatar-right"  onclick="addCal('+604')" >
+              <a class="item item item-avatar-right"  onclick="addCal('+604')" ><!-- adds cals from function in controllers-->
                 <img src="img/chickensalad.jpg">
                 <p>Chicken Salad with Coleslaw - 604kcal per 10oz</p>
                 <p>Info - Fat 18.5g | Carbs 2g | Sugar 1.9g</p>
@@ -55,13 +59,13 @@
          Salads (per 261g)
        </div>
 
-               <a class="item item item-avatar-right"  onclick="addCal('+98')" >
+               <a class="item item item-avatar-right"  onclick="addCal('+98')" ><!-- adds cals from function in controllers-->
                  <img src="img/caesar.jpg">
                  <p>Caesar - 98kcal per 261g</p>
                  <p>Fat 9g | Carbs 1.4g | Sugar 3g</p>
                </a>
 
-               <a class="item item item-avatar-right"  onclick="addCal('+178')" >
+               <a class="item item item-avatar-right"  onclick="addCal('+178')" ><!-- adds cals from function in controllers-->
                  <img src="img/tuna.jpg">
                  <p>Tuna Salad - 178kcal per 261g</p>
                  <p>Fat 6.8g | Carbs 1.4g | Sugar 3.4g</p>
@@ -72,12 +76,12 @@
           Rolls
           </div>
 
-                <a class="item item item-avatar-right"  onclick="addCal('+217')" >
+                <a class="item item item-avatar-right"  onclick="addCal('+217')" ><!-- adds cals from function in controllers-->
                   <img src="img/panini.jpg">
                   <p>Panini - 217kcal per roll</p>
                   <p>Fat 3.6g | Carbs 3g | Sugar 1.1g</p>
                 </a>
-                <a class="item item item-avatar-right"  onclick="addCal('+650')" >
+                <a class="item item item-avatar-right"  onclick="addCal('+650')" ><!-- adds cals from function in controllers-->
                   <img src="img/break.png">
                   <p>Breakfast Roll - 650kcal per roll</p>
                   <p>Fat 43.1g | Carbs 23g | Sugar 23g</p>

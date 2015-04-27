@@ -1,3 +1,4 @@
+// linked to ng-app in pages. Dictates the states and controllers
 angular.module('calorific', ['ionic','calorific.controllers'])
 
 .run(function($ionicPlatform) {
@@ -12,17 +13,17 @@ angular.module('calorific', ['ionic','calorific.controllers'])
     }
   });
 })
-
+// controls the states and how the app is navigates throughout
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
-
+//state of the menu to the left of the landing page.
   .state('app', {
     url: "/app",
     abstract: true,
     templateUrl: "templates/menu.html",
 
   })
-
+// breakfast html
   .state('app.breakfast', {
   url: "/breakfast",
   views: {
@@ -32,7 +33,7 @@ angular.module('calorific', ['ionic','calorific.controllers'])
     }
   }
 })
-
+//lunch html
 .state('app.lunch', {
 url: "/lunch",
 views: {
@@ -42,7 +43,7 @@ views: {
   }
 }
 })
-
+//dinner html
 .state('app.dinner', {
 url: "/dinner",
 views: {
@@ -52,7 +53,7 @@ views: {
   }
 }
 })
-
+//about the apphtml
 .state('app.about', {
 url: "/about",
 views: {
@@ -62,7 +63,7 @@ views: {
   }
 }
 })
-
+//main landing page where the app starts from
 .state('app.home', {
 url: "/home",
 views: {

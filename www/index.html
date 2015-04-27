@@ -8,35 +8,31 @@
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
-
-    <!-- ionic/angularjs js -->
+    <!-- This is the link to the ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
-    <!-- your app's js and controller.js -->
+    <!-- my app.js and controller.js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
   </head>
   <body ng-app="calorific"><!-- Links to calorific function in app.js -->
 
-   <ion-nav-view ng-app="calorific"></ion-nav-view> <!-- Empy space for pages to be called into. -->
+   <ion-nav-view ng-app="calorific"></ion-nav-view> <!-- Empty space for pages to be called into. -->
 
    <!-- Bottom nav bar that runs throughout the app -->
    <ion-tabs class="tabs-icon-top tabs-striped tabs-color-balanced">
-
+     <!-- Home Tab -->
      <ion-tab title="Home" icon="ion-home" href="#/app/home">
        <ion-nav-view name="home-tab"></ion-nav-view>
      </ion-tab>
-
+     <!-- About Tab -->
      <ion-tab title="About" icon="ion-ios-information" href="#/app/about">
        <ion-nav-view name="about-tab"></ion-nav-view>
      </ion-tab>
-
+     <!-- Contact Tab -->
      <ion-tab title="Contact" icon="ion-ios-world"
      href="#/app/contact">
        <ion-nav-view name="contact-tab"></ion-nav-view>
