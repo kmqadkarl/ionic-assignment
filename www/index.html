@@ -26,6 +26,22 @@
 
    <ion-nav-view></ion-nav-view> <!-- Empy space for pages to be called into. -->
 
-   
+   <!-- Bottom nav bar that runs throughout the app -->
+   <ion-tabs class="tabs-icon-top tabs-striped tabs-color-balanced">
+
+     <ion-tab title="Home" icon="ion-home" href="#/app/home">
+       <ion-nav-view name="home-tab"></ion-nav-view>
+     </ion-tab>
+
+     <ion-tab title="About" icon="ion-ios-information" href="#/app/about">
+       <ion-nav-view name="about-tab"></ion-nav-view>
+     </ion-tab>
+
+     <ion-tab title="Contact" icon="ion-ios-world"
+     href="tabs.contact">
+       <ion-nav-view name="contact-tab"></ion-nav-view>
+     </ion-tab>
+     </ion-tabs>
+
   </body>
 </html>

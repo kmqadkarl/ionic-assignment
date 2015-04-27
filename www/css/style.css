@@ -1,1 +1,24 @@
 /* Empty. Add your own CSS if you like */
+.textheader
+{
+  padding:5px;
+  color:#33CD5F;
+  text-align:center;
+}
+
+.textsection
+{
+  font-weight:bold;
+  color:#33CD5F;
+  border-style:
+  padding:10px;
+  margin:10px;
+  border-radius:10px;
+
+  text-align:justify;
+  }
+
+  .paddingt
+  {
+    padding-top:10px;
+  }
