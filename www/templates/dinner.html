@@ -1,1 +1,111 @@
 
+<ion-view view-title="'Dinner Menu'">
+
+  <ion-content ng-app="calorific">
+
+    <div class="list card">
+
+      <div >
+        <h1 style="color:white; text-align:center; background-color:green;">Dinner</h1>
+
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" src="img/dinner.jpg">
+
+      </div>
+    </div>
+
+    <div class=“card”>
+
+
+    <center><h3>Total Calories (max 2000 kcal)
+         <div id="totCal">
+           0
+         </div>
+       </h3></center>
+
+         <center><a class="button button-small button-balanced" style="margin-bottom:10px;" onclick="reset()">Clear Calories</a></center>
+
+         <div class="item item-divider item-balanced">
+        Meats (per 10oz)
+      </div>
+
+              <a class="item item item-avatar-right"  onclick="addCal('+400')" >
+                <img src="img/sirloin.jpg">
+                <p>Sirloin - 400kcal per 10oz</p>
+                <p>Info - Fat 30g | Carbs 3.4g | Sugar 0g</p>
+              </a>
+
+              <a class="item item item-avatar-right"  onclick="addCal('+350')" >
+                <img src="img/rump.jpg">
+                <p>Rump - 350kcal per 10oz</p>
+                <p>Info - Fat 35g | Carbs 5.4g | Sugar 0g</p>
+              </a>
+
+              <a class="item item item-avatar-right"  onclick="addCal('+300')" >
+                <img src="img/chicken.jpg">
+                <p>Chicken - 300kcal per 10oz</p>
+                <p>Info - Fat 10g | Carbs 4.4g | Sugar 0g</p>
+              </a>
+
+        <div>
+
+          <div class="item item-divider item-balanced">
+         Salads (per 261g)
+       </div>
+
+               <a class="item item item-avatar-right"  onclick="addCal('+98')" >
+                 <img src="img/caesar.jpg">
+                 <p>Caesar - 98kcal per 261g</p>
+                 <p>Fat 9g | Carbs 1.4g | Sugar 3g</p>
+               </a>
+
+               <a class="item item item-avatar-right"  onclick="addCal('+178')" >
+                 <img src="img/tuna.jpg">
+                 <p>Tuna Salad - 178kcal per 261g</p>
+                 <p>Fat 6.8g | Carbs 1.4g | Sugar 3.4g</p>
+               </a>
+
+          <div class="item item-divider item-balanced">
+          Fish (per 227g)
+          </div>
+
+                <a class="item item item-avatar-right"  onclick="addCal('+611')" >
+                  <img src="img/fishchips.jpg">
+                  <p>Fish & Chips - 611kcal per 227g</p>
+                  <p>Fat 31g | Carbs 32g | Sugar 0g</p>
+                </a>
+                <a class="item item item-avatar-right"  onclick="addCal('+611')" >
+                  <img src="img/whitefish.jpg">
+                  <p>White fish - 100kcal per 125g</p>
+                  <p>Fat 0.9g | Carbs 10g | Sugar 0g</p>
+                </a>
+
+          <div class="item item-divider item-balanced">
+          Sides
+          </div>
+
+                <a class="item item item-avatar-right"  onclick="addCal('+114')" >
+                  <img src="img/mash.jpg">
+                  <p>Mash Potatoes - 114kcal per 110g</p>
+                  <p>Fat 4.7g | Carbs 5g | Sugar 1.1g</p>
+                </a>
+                <a class="item item item-avatar-right"  onclick="addCal('+312')" >
+                  <img src="img/chips.jpg">
+                  <p>Homemad chips - 312kcal per 165g</p>
+                  <p>Fat 11.1g | Carbs 23g | Sugar 1g</p>
+                </a>
+
+        <div style="padding-bottom:20px;">
+        </div>
+
+
+        </ion-content>
+
+
+
+
+
+
+</ion-view>
