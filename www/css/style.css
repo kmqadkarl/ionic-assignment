@@ -9,6 +9,17 @@ This is just an example of external child css. */
   text-align:center;
 }
 
+.mainheader
+{
+  color:white;
+  font-weight:bold;
+  background-color:#33CD5F;
+  border-bottom-style:groove;
+  border-bottom-width:5px;
+  border-top-style:groove;
+  border-top-width:5px;
+}
+
 .textsection
 {
   font-weight:bold;

@@ -1,5 +1,5 @@
 <!-- Menu is the base page and is controlled in the states in app.js -->
-<ion-side-menus enable-menu-with-back-views="false">
+<ion-side-menus enable-menu-with-back-views="true">
   <ion-side-menu-content>
     <ion-nav-bar class="bar-balanced">
       <ion-nav-back-button>
@@ -8,6 +8,7 @@
       <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
         </button>
+
 
       </ion-nav-buttons>
     </ion-nav-bar>
@@ -34,20 +35,26 @@
     <!-- Breakfast page link button -->
     <ion-item class="nav-clear menu-close item item-icon-left "
     href="#/app/breakfast">
-    <i class="icon ion-battery-full"></i>
+    <i class="icon ion-spoon"></i>
     Breakfast
     </ion-item>
     <!-- Lunch page link -->
     <ion-item class="nav-clear menu-close item item-icon-left "
     href="#/app/lunch">
-    <i class="icon ion-battery-low"></i>
+    <i class="icon ion-knife"></i>
     Lunch
     </ion-item>
     <!-- Dinner page link -->
     <ion-item class="nav-clear menu-close item item-icon-left "
     href="#/app/dinner">
-    <i class="icon ion-battery-empty"></i>
+    <i class="icon ion-fork"></i>
     Dinner
+    </ion-item>
+    <!-- Dinner page link -->
+    <ion-item  class="nav-clear menu-close item item-icon-left "
+    href="#/app/add">
+    <i class="icon ion-plus-circled"></i>
+    Your Meals
     </ion-item>
 
 </div>

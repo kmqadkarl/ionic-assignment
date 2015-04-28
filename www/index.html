@@ -18,14 +18,25 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
   </head>
-  <body ng-app="calorific"><!-- Links to calorific function in app.js -->
 
-   <ion-nav-view ng-app="calorific"></ion-nav-view> <!-- Empty space for pages to be called into. -->
+  <body ng-app="calorific"  ng-controller="TodoCtrl">
+
+    <center><div style="background-color:green; color:white;"> __________________  2000kcal MAX  _________________
+      <!-- link to function in my controllers which totals the Calories. -->
+
+    </div></center>
+
+    <!-- Links to calorific function in app.js -->
+    <center><h3><div class="mainheader"id="totCal">
+      0
+    </div></h3></center>
+
+     <ion-nav-view ng-app="calorific"></ion-nav-view> <!-- Empty space for pages to be called into. -->
 
    <!-- Bottom nav bar that runs throughout the app -->
    <ion-tabs class="tabs-icon-top tabs-striped tabs-color-balanced">
      <!-- Home Tab -->
-     <ion-tab title="Home" icon="ion-home" href="#/app/home">
+     <ion-tab title="Home" icon="ion-home" href="templates/home.html">
        <ion-nav-view name="home-tab"></ion-nav-view>
      </ion-tab>
      <!-- About Tab -->
@@ -33,9 +44,9 @@
        <ion-nav-view name="about-tab"></ion-nav-view>
      </ion-tab>
      <!-- Contact Tab -->
-     <ion-tab title="Contact" icon="ion-ios-world"
-     href="#/app/contact">
-       <ion-nav-view name="contact-tab"></ion-nav-view>
+     <ion-tab title="Add" icon="ion-plus"
+     href="#/app/add">
+       <ion-nav-view name="add-tab"></ion-nav-view>
      </ion-tab>
      </ion-tabs>
 

@@ -2786,7 +2786,7 @@ cite {
   text-align: center; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #000;
+  color: #008000;
   font-weight: 500;
   font-family: "Helvetica Neue", "Roboto", sans-serif;
   line-height: 1.2; }
@@ -2796,7 +2796,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 h1, .h1, h2, .h2, h3, .h3 {
   margin-top: 20px;
-  margin-bottom: 10px; }
+  /* margin-bottom: 10px; */ }
   h1:first-child, .h1:first-child, h2:first-child, .h2:first-child, h3:first-child, .h3:first-child {
     margin-top: 0; }
   h1 + h1, h1 + .h1, h1 + h2, h1 + .h2, h1 + h3, h1 + .h3, .h1 + h1, .h1 + .h1, .h1 + h2, .h1 + .h2, .h1 + h3, .h1 + .h3, h2 + h1, h2 + .h1, h2 + h2, h2 + .h2, h2 + h3, h2 + .h3, .h2 + h1, .h2 + .h1, .h2 + h2, .h2 + .h2, .h2 + h3, .h2 + .h3, h3 + h1, h3 + .h1, h3 + h2, h3 + .h2, h3 + h3, h3 + .h3, .h3 + h1, .h3 + .h1, .h3 + h2, .h3 + .h2, .h3 + h3, .h3 + .h3 {
@@ -4882,7 +4882,9 @@ a.item-content {
 .item-icon-left {
   padding-left: 54px; }
   .item-icon-left .icon {
-    left: 11px; }
+    left: 11px; 
+    color: green;
+}
 
 .item-complex.item-icon-left {
   padding-left: 0; }

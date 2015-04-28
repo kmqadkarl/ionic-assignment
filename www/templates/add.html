@@ -1,0 +1,79 @@
+<ion-view view-title="{{activeProject.title}}">
+
+  <!--Link to information image from remote image address-->
+  <ion-content ng-app="calorific" ng-controller="TodoCtrl">
+
+
+    <!--Side Menu - button and new task on left-->
+    <ion-side-menus>
+    <ion-side-menu-content>
+      <!-- Center content -->
+        <ion-header-bar class="bar-balanced">
+          <button class="button button-icon" menu-toggle="left">
+            <i class="icon ion-navicon"></i>
+          </button>
+          <!-- Active Food-->
+          <h1 style="font-weight:bold;"class="title">{{activeFood.title}}</h1>
+          <!-- New Information button-->
+          <button class="button button-clear" ng-click="newTask()">
+            Add Info
+          </button>
+        </ion-header-bar>
+        <!-- Repeats or lists the information out in food-->
+        <ion-content>
+          <ion-list class="fade-in-not-out checkbox-balanced">  <!-- repeat, tried to add calorie, not working. May need to parse-->
+            <ion-checkbox ng-repeat="task in activeFood.tasks" ng-change="completionChanged(addCal('+title'))" ng-model="task.isComplete" ng-class="{complete: task.isComplete}">
+            {{task.title}}
+          </ion-checkbox>
+        </ion-list>
+        </ion-content>
+      </ion-side-menu-content>
+
+      <!--Button to add new Food Type . Make sure you swipe the button then you can click. There is a bug somewhere-->
+    <ion-side-menu side="left">
+        <ion-header-bar class="bar-balanced">
+          <h1 class="title">New Food(swipe)</h1>
+          <button class="button button-icon" ng-click="newFood()">
+            <i class="ion ion-plus"></i>
+          </button>
+        </ion-header-bar>
+    <ion-content>
+          <ion-list>  <!-- Repeats or lists the new foods-->
+            <ion-item ng-repeat="food in foods" ng-click="selectFood(food, $index)" ng-class="{active:activeFood == food}">
+              {{food.title}}
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-side-menu>
+    </ion-side-menus>
+    <!-- Scripts to call function from app.js-->
+            <script id="new-task.html" type="text/ng-template">
+              <div class="modal">
+                <ion-header-bar class="bar-balanced">  // add calories
+                  <h1 class="title">Add number of Calories</h1>
+                  <button class="button button-clear" ng-click="closeNewTask()">Cancel</button>
+                </ion-header-bar>
+
+                <ion-content> // create food script
+                  <form ng-submit="createTask(task)">
+                    <div class="list">
+                      <label class="item item-balanced">
+                        <input type="text"  ng-model="task.title">
+                      </label>
+                    </div>
+                    <div class="padding">
+                      <button type="submit" class="button button-block button-balanced">Add Calories</button>
+                    </div>
+                  </form>
+                </ion-content>
+              </div>
+            </script>
+
+    <!-- padding bottom-->
+<div style="padding-bottom:800px;">
+</div>
+
+  </ion-content>
+
+
+</ion-view>
