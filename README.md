@@ -1,7 +1,9 @@
 #Mobile development project on Calorie Counter
 by Karl McDonnell - G00305460
 
-The app is covered in Github @ https://github.com/kmqadkarl/ionic-assignment
+The app is covered in Github @
+
+			#https://github.com/kmqadkarl/ionic-assignment
 
 The app is divided into four main parts
 
@@ -16,7 +18,9 @@ I used the todoProject to add foods and put in the localstorage to keep new Food
 
 There is a menu bar plus some tabs at the bottom linking to other pages.
 
-What i used to develop the app was mainly what we were shown in class.
+What I used to develop the app was mainly what we were shown in class.
+
+See all the comments in the files to see.
 
 
 https://github.com/kmqadkarl/cavamenu
@@ -33,3 +37,5 @@ Local storage app given.
 
 http://learnonline.gmit.ie/course/view.php?id=1233
 Not forgetting all the notes and stuff in here. :)
+
+Stack overflow - quite a bit.....

@@ -91,7 +91,13 @@ angular.module('calorific', ['ionic','calorific.controllers'])
 
 
 })
-
+// This is to add the tabs to the bottom of the page as it was floating 
+//to the top when the android app was built. 
+.config(['$ionicConfigProvider', function($ionicConfigProvider)
+{
+$ionicConfigProvider.tabs.position('bottom');
+}])
+// Add local storage to the project
 .factory('Foods', function() {
   return {
     all: function() {
@@ -101,17 +107,19 @@ angular.module('calorific', ['ionic','calorific.controllers'])
       }
       return [];
     },
+	// save the food to local storage
     save: function(foods) {
       window.localStorage['foods'] = angular.toJson(foods);
     },
     newFood: function(foodTitle) {
-      // Add a new project
+      // Add a new food function
       return {
         title: foodTitle,
         title: foodTitle,
         tasks: []
       };
     },
+	// Retrieve last food info
     getLastActiveIndex: function() {
       return parseInt(window.localStorage['lastActiveFood']) || 0;
     },
@@ -165,7 +173,7 @@ angular.module('calorific', ['ionic','calorific.controllers'])
     focusFirstInput: false,
     scope: $scope
   });
-
+// Add Calories
   $scope.createTask = function(task) {
     if (!$scope.activeFood) {
       return;
